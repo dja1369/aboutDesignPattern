@@ -19,7 +19,7 @@ Design Pattern Study
   - [ ] 추상 팩토리
   - [ ] 빌더
   - [ ] 프로토타입
-  - [ ] 싱글턴
+  - [v] 싱글턴
 - 구조 패턴(Structural Pattern)
   - [ ] 어댑터
   - [ ] 브릿지
