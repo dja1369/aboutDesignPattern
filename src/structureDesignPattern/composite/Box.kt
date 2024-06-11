@@ -7,8 +7,13 @@ class Box: Component{
     }
 
     override fun getName(): String {
-        return "Box, ".plus(children.joinToString { it.getName() })
+        return "Box"
     }
+    override fun toString(): String {
+        return "${getName()}, (${children.joinToString { "($it)"}})"
+    }
+
+
     fun add (component: Component){
         children.add(component)
     }

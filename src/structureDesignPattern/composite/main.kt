@@ -13,4 +13,5 @@ fun main() {
 
     println(box.getPrice())
     println(box.getName())
+    println(box.toString())
 }

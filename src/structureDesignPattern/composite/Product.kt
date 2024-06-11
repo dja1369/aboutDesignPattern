@@ -8,4 +8,7 @@ class Product: Component {
     override fun getName(): String {
         return "Product"
     }
+    override fun toString(): String {
+        return getName()
+    }
 }
