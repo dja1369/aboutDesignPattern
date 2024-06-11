@@ -10,13 +10,13 @@ object ThreadSafeObjectSingleton {
         return this.count
     }
 }
-fun test(){
+fun main(){
     val obj1 = ThreadSafeObjectSingleton
     val obj2 = ThreadSafeObjectSingleton
 //    val obj3 = Singleton()    // Error
 
-    Singleton.add(1)
-    Singleton.add(2)
+    obj1.add(1)
+    obj1.add(2)
 
     println(obj1 === obj2) // true
 
@@ -24,4 +24,3 @@ fun test(){
     println(obj2.getCount()) // 3
 }
 
-test()

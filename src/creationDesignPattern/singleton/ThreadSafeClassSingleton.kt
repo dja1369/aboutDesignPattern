@@ -1,5 +1,5 @@
 class ThreadSafeClassSingleton private constructor(value: String) {
-    private var name: String? = value
+    private val name: String = value
     companion object{
         private var instance: ThreadSafeClassSingleton? = null
 
@@ -8,11 +8,11 @@ class ThreadSafeClassSingleton private constructor(value: String) {
             if (instance == null) {
                 instance = ThreadSafeClassSingleton(value)
             }
-            return instance
+            return instance!!
         }
     }
     fun getName(): String {
-        return this.name!!
+        return this.name
     }
 }
 
@@ -30,9 +30,7 @@ class ThreadBar : Runnable {
     }
 }
 
-fun test(){
+fun main(){
     Thread(ThreadFoo()).start()
     Thread(ThreadBar()).start()
 }
-
-test()

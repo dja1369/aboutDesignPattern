@@ -1,36 +1,22 @@
 
-class NonThreadSafeSingleton {
-    private constructor(value: String) {
-        val name = value
-    }
+class NonThreadSafeSingleton private constructor(value: String) {
+    val name: String = value
 
     companion object {
         private var instance: NonThreadSafeSingleton? = null
 
-        fun getInstance(): NonThreadSafeSingleton {
+        fun getInstance(value: String): NonThreadSafeSingleton {
             if (instance == null) {
-                instance = NonThreadSafeSingleton()
+                instance = NonThreadSafeSingleton(value = value)
             }
-            return instance!
+            return instance!!
         }
     }
-    fun getName(): String {
-        return this.name
-    }
-}
-
-fun test() {
-//    val singleton: NonThreadSafeSingleton = NonThreadSafeSingleton()  // Error
-    val singleton: NonThreadSafeSingleton = NonThreadSafeSingleton.getInstance("ho")
-    val singleton2: NonThreadSafeSingleton = NonThreadSafeSingleton.getInstance("bo")
-
-    println(singleton.getName())    // ho
-    println(singleton2.getName())   // ho
 }
 
 fun testGivenValue(){
     val singleton: NonThreadSafeSingleton = NonThreadSafeSingleton.getInstance("boo")
-    println(singleton.getName())    // boo
+    println(singleton.name)    // boo
 }
 
 class TestThread: Runnable {
@@ -39,5 +25,13 @@ class TestThread: Runnable {
     }
 }
 
-Thread(TestThread()).start()
-test()
+fun main() {
+//    val singleton: NonThreadSafeSingleton = NonThreadSafeSingleton()  // Error
+
+    val singleton: NonThreadSafeSingleton = NonThreadSafeSingleton.getInstance("ho")
+    val singleton2: NonThreadSafeSingleton = NonThreadSafeSingleton.getInstance("bo")
+
+    println(singleton.name)    // ho
+    println(singleton2.name)   // ho
+    Thread(TestThread()).start()
+}
