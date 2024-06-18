@@ -13,7 +13,7 @@ class TextEditor(
     fun undo(){
         val lastState = history.undo()
         content.clear()
-        content.addAll(lastState?.content ?: emptyList())
+        content.addAll(lastState.content)
     }
 
     override fun toString(): String {
