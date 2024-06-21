@@ -1,0 +1,47 @@
+package src.creationDesignPattern.builder
+
+fun main() {
+    // Create a car using the builder pattern
+    val carBuilder = CarBuilder()
+    val autoCar: Car = carBuilder
+        .setEngine(AutoEngine())
+        .setWheels(Wheels())
+        .setNavigator(Navigator())
+        .build()
+    autoCar.start()
+    autoCar.increaseSpeed()
+    autoCar.increaseSpeed()
+    autoCar.increaseSpeed()
+    autoCar.getSpeed()
+    autoCar.decreaseSpeed()
+    autoCar.getSpeed()
+    println("Car Speed: ${autoCar.getSpeed()}")
+    autoCar.setDestination("New York")
+    println("Car is moving to ${autoCar.getDestination()}")
+    autoCar.rotateWheels()
+    println("Wheel rotation: ${autoCar.getWheelRotation()}")
+    autoCar.stop()
+
+    println("=====================================")
+    // Create a car using the director (Director Must have Builder)
+    val manualCar: Car = Director.constructManualCar(CarBuilder())
+    manualCar.start()
+    manualCar.increaseSpeed()
+    manualCar.increaseSpeed()
+    manualCar.increaseSpeed()
+    manualCar.increaseSpeed()
+    manualCar.increaseSpeed()
+    manualCar.increaseSpeed()
+    manualCar.increaseSpeed()
+    manualCar.increaseSpeed()
+    manualCar.getSpeed()
+    manualCar.decreaseSpeed()
+    manualCar.getSpeed()
+    println("Car Speed: ${manualCar.getSpeed()}")
+    manualCar.setDestination("New York")
+    println("Car is moving to ${manualCar.getDestination()}")
+    manualCar.rotateWheels()
+    println("Wheel rotation: ${manualCar.getWheelRotation()}")
+    manualCar.stop()
+
+}
