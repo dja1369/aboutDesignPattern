@@ -13,7 +13,6 @@ class Box: Component{
         return "${getName()}, (${children.joinToString { "($it)"}})"
     }
 
-
     fun add (component: Component){
         children.add(component)
     }

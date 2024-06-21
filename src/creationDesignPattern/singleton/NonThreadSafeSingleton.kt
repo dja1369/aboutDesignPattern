@@ -1,7 +1,6 @@
 
 class NonThreadSafeSingleton private constructor(value: String) {
     val name: String = value
-
     companion object {
         private var instance: NonThreadSafeSingleton? = null
 

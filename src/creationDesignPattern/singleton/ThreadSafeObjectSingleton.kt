@@ -16,7 +16,7 @@ fun main(){
 //    val obj3 = Singleton()    // Error
 
     obj1.add(1)
-    obj1.add(2)
+    obj2.add(2)
 
     println(obj1 === obj2) // true
 
