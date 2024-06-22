@@ -6,6 +6,5 @@ fun main() {
     println(converter.convert(intData))
     val stringData = StringType("Hello")
     println(converter.convert(stringData))
-    println(converter.convert(FloatType(10.0f)))
-
+//    println(converter.convert(FloatType(10.0f))) // Error! Invalid type
 }
