@@ -1,7 +1,7 @@
 package src.creationDesignPattern.factoryMethod
 
 fun main() {
-    var choice = (1..3).random()
+    val choice = (1..3).random()
     val product = Product("Laptop", price = 1000, deliveryType = null)
     val logistics: Logistics = when(choice) {
         1 -> TruckLogistic()
