@@ -17,15 +17,15 @@ Design Pattern Study
 - 생성 패턴(Creational Pattern)
   - [ ] 팩토리 메소드
   - [ ] 추상 팩토리
-  - [ ] 빌더
+  - [v] 빌더
   - [v] 프로토타입
   - [v] 싱글턴
 - 구조 패턴(Structural Pattern)
   - [ ] 어댑터
   - [v] 브릿지
   - [v] 컴포지트
-  - [ ] 데코레이터
-  - [ ] 파사드
+  - [v] 데코레이터
+  - [v] 파사드
   - [ ] 플라이웨이트
   - [ ] 프록시
 - 행위 패턴(Behavioral Pattern)
