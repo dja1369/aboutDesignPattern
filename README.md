@@ -21,13 +21,13 @@ Design Pattern Study
   - [v] 프로토타입
   - [v] 싱글턴
 - 구조 패턴(Structural Pattern)
-  - [ ] 어댑터
+  - [v] 어댑터
   - [v] 브릿지
   - [v] 컴포지트
   - [v] 데코레이터
   - [v] 파사드
   - [ ] 플라이웨이트
-  - [ ] 프록시
+  - [v] 프록시
 - 행위 패턴(Behavioral Pattern)
   - [v] 책임 연쇄
   - [ ] 커맨드
