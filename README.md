@@ -15,8 +15,8 @@ Design Pattern Study
 
 ## 3. 디자인 패턴의 종류
 - 생성 패턴(Creational Pattern)
-  - [ ] 팩토리 메소드
-  - [ ] 추상 팩토리
+  - [v] 팩토리 메소드
+  - [v] 추상 팩토리
   - [v] 빌더
   - [v] 프로토타입
   - [v] 싱글턴
@@ -40,4 +40,3 @@ Design Pattern Study
   - [v] 전략
   - [ ] 템플릿 메소드
   - [ ] 비지터
-  - [ ] 전략
