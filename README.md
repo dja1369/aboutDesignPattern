@@ -26,7 +26,7 @@ Design Pattern Study
   - [v] 컴포지트
   - [v] 데코레이터
   - [v] 파사드
-  - [ ] 플라이웨이트
+  - [v] 플라이웨이트
   - [v] 프록시
 - 행위 패턴(Behavioral Pattern)
   - [v] 책임 연쇄
