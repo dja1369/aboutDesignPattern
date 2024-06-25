@@ -14,5 +14,7 @@ fun main() {
     } catch (e: Exception) {
         println("Error: ${e.message}")
     }
+    println("Owner: ${account.getOwner}")
     println("Final balance: ${account.getBalance}")
+
 }
