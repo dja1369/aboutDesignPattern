@@ -5,8 +5,8 @@ class TransactionManager {
 
     fun executeCommand(command: Command) {
         try {
-            transactionLogs.add(command)
             command.execute()
+            transactionLogs.add(command)
         } catch (e: Exception) {
             println("Error: ${e.message}")
             rollbackTransaction()
