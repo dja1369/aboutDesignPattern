@@ -4,8 +4,6 @@ class ChatUserImpl(
     private val mediator: Mediator,
     private var name: String
 ): ChatUser{
-    val getUser: String
-        get() = name
     init{
         mediator.addUser(this)
     }
