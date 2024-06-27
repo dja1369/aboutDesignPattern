@@ -31,7 +31,6 @@ Design Pattern Study
 - 행위 패턴(Behavioral Pattern)
   - [v] 책임 연쇄
   - [v] 커맨드
-  - [ ] 인터프리터
   - [v] 이터레이터
   - [v] 미디에이터(중재자)
   - [v] 메멘토
